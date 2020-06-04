@@ -17,8 +17,13 @@ export default Vue.extend({
     })
   },
   methods: {
-    async click () {
+    click () {
+      this.poyo()
+    },
+    async poyo () {
       await sleep(100).then(() => {
+        console.log('poyo')
+
         throw new Error('poyo')
       })
     }
