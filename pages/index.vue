@@ -1,40 +1,27 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        nuxtjs-vue-reactive-error-handler-sandbox
-      </h1>
-      <h2 class="subtitle">
-        My solid Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <button @click="click">
+      click me
+    </button>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
 
+const sleep = (msec: number) => new Promise(resolve => setTimeout(resolve, msec))
 export default Vue.extend({
-  components: {
-    Logo
+  mounted () {
+    sleep(100).then(() => {
+      throw new Error('poypoyo')
+    })
+  },
+  methods: {
+    async click () {
+      await sleep(100).then(() => {
+        throw new Error('poyo')
+      })
+    }
   }
 })
 </script>

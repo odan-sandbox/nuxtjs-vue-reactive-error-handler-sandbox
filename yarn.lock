@@ -8316,6 +8316,11 @@ vue-no-ssr@^1.1.1:
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
 
+vue-reactive-error-handler@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/vue-reactive-error-handler/-/vue-reactive-error-handler-0.0.8.tgz#8bf8ab5a759e7016e46b2cf61f762819fcb1fd10"
+  integrity sha512-ogPgm5pKq+NY3iSWIkY4JU7sjaUp3X4LjLoxHx4zK5HJki63PCj6cJH5uNGBHYTUbE9VKcPkQT+utFn1SWTV6Q==
+
 vue-router@^3.1.6:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.3.2.tgz#0099de402edb2fe92f9711053ab5a2156f239cad"
